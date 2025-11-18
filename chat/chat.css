@@ -43,6 +43,28 @@ body {
     width: 40px;
     height: 40px;
 }
+
+/* botão de perfil na gaveta de conversa */
+#bt_chat {
+    margin-top: 10px;
+    margin-right: 10px;
+    right: 5%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10PX;
+}
+
+/* botão de perfil na gaveta de conversa */
+#bt_chat {
+    margin-top: 10px;
+    margin-right: 10px;
+    right: 5%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10PX;
+}
  
 /* container q segura as conversas */
 .cnt_conversas{
@@ -69,9 +91,24 @@ body {
     /* container interno que segura as conversas */
 .lista {
     width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    border: 1px solid #ccc;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+    /* container interno que segura as conversas */
+.opções {
+    width: 100%;
     background: white;
     overflow: hidden;
     border: 1px solid #ccc;
+    position: absolute;
+    top: 74%;
+    border-radius: 0% 0% 10px 10px;
+
 }
 
 /* cada conversa individual */
@@ -121,4 +158,25 @@ body {
     width: 75%;
     position: absolute;
     left: 15%;
+}
+
+#bt_enviar {
+    margin-top: 50%;
+    position: absolute;
+    right: 3%;
+    border-radius: 50px;
+}
+
+#bt_midia {
+    margin-top: 50%;
+    position: absolute;
+    left: 9%;
+    border-radius: 50px;
+}
+
+#bt_fotos {
+    margin-top: 50%;
+    position: absolute;
+    left: 3%;
+    border-radius: 50px;
 }

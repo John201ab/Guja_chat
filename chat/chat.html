@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link com a pagina do css -->
     <link rel="stylesheet" href="./chat.css">
+    <!-- link com os itens do bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- link dos icones do bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Guja chat :D</title>
 </head>
 
 <body>
-   
+
     <div class="container-fluid">
-         <!-- TODA PARTE DE CIMA (USEI BOOTSTRAP)-->
+        <!-- TODA PARTE DE CIMA (USEI BOOTSTRAP)-->
         <div class="mb-3 w-100 h-100">
             <!-- input de pesquisar -->
             <input type="text" class="form-control" id="ipt_pesquisa" placeholder="pesquisar">
@@ -31,29 +34,83 @@
             <div class="logo">
                 <h1>Guja chat</h1>
             </div>
-
             <!-- lista de contatos -->
+            <div class="lista" >
+                <button type="button_chat" class="btn btn-primary perfil-btn" id="bt_chat">
+                    <i class="bi bi-person"></i>
+                </button>
+
+                <div class="nome">Conversa 1</div>
+            </div>
+
+            <div class="lista" >
+                <button type="button_chat" class="btn btn-primary perfil-btn" id="bt_chat">
+                    <i class="bi bi-person"></i>
+                </button>
+
+                <div class="nome">Conversa 2</div>
+            </div>
+
             <div class="lista">
-                <div class="item">Conversa 1</div>
-                <div class="item">Conversa 2</div>
-                <div class="item">Conversa 3</div>
-        
+                <button type="button_chat" class="btn btn-primary perfil-btn" id="bt_chat">
+                    <i class="bi bi-person"></i>
+                </button>
+
+                <div class="nome">Conversa 3</div>
+            </div>
+            <!-- OPÇÕES -->
+            <div class="opções">
+                <!-- botão do feed -->
+                <div class="lista">
+                <button type="button_chat" class="btn btn-primary perfil-btn" id="bt_chat">
+                    <i class="bi bi-house-door"></i>
+                </button>
+                <div class="nome">feed</div>
+            </div>
+                <!-- botão de configurações -->
+                <div class="lista">
+                <button type="button_chat" class="btn btn-primary perfil-btn" id="bt_chat">
+                    <i class="bi bi-gear"></i>
+                </button>
+
+                <div class="nome">configurações</div>
+            </div>
+
             </div>
         </div>
 
         <!-- TODA DIV DO FEED -->
         <div class="chat">
+            <!-- faixa azul em cima de onde vão ficar as conversas -->
             <div class="logo2">
+                <!-- botão que vai exibir a imagem de perfil -->
                 <button type="button" class="btn btn-primary" id="bt_perfil_chat">
-                <i class="bi bi-person"></i> </button>
+                    <!-- icone dentro do botão -->
+                    <i class="bi bi-person"></i> </button>
+                <!-- nome da pessoa que você vai conversar -->
                 <div>nome do contato</div>
             </div>
             <!-- input de mensagem -->
             <input type="text" class="form-control" id="ipt_mensagem" placeholder="pesquisar">
+            <!-- botão de enviar mensagem -->
+            <button type="button" class="btn btn-primary" id="bt_enviar">
+                <!-- icone do botão -->
+                <i class="bi bi-envelope-check"></i>
+            </button>
+            <!-- botão pra exportar arquivos de midia -->
+            <button type="button" class="btn btn-primary" id="bt_midia">
+                <!-- icone do botão -->
+                <i class="bi bi-file-image"></i>
+            </button>
+            <!-- botão para exportar fotos -->
+            <button type="button" class="btn btn-primary" id="bt_fotos">
+                <!-- icone do botão -->
+                <i class="bi bi-file-earmark-plus"></i>
+            </button>
 
         </div>
 
-        
+
     </div>
 </body>
 
