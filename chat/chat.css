@@ -3,12 +3,13 @@
     --recado: white;
 }
 
-html,
+
 body {
     margin: 0%;
     padding: 0%;
     width: 100%;
     height: 100%;
+    min-width: 400px !important;
 }
 
 /* todo o fundo do site */
@@ -17,42 +18,54 @@ body {
     width: 100%;
     background-color: rgb(255, 1, 1);
     display: flex;
+    min-width: 350px !important;
+
+}
+
+/* foto de funco do site */
+#imgFundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+
 }
 
 /* fundo da barra de pesquisa */
-.forma{
-    height: 10%;
-    width: 91%;
-    border-radius: 10px;
-    background-color: white;
-    margin-left: 65px;
-    margin-top: 20px;
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 
+    width: 91%;
+    height: 60px;
+
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    position: relative;
+    margin: 30px auto 0 auto;
 }
 
 /* barra de pesquisa */
 #ipt_pesquisa {
-    margin-top: 20px;
-    width: 75%;
-    position: absolute;
-    left: 15%;
+    margin-top: 10px;
+    flex: 3;
+    
 }
 
 /* botão de publicação */
 #bt_publicação {
-    margin-top: 20px;
-    position: absolute;
-    left: 6%;
+    margin-top: 10px;
+    flex: 0.3;
 }
 
 /* botão de perfil */
 #bt_perfil {
-    margin-top: 20px;
-    position: absolute;
-    right: 6%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
 }
 
 /* botão de perfil na gaveta de conversa */
@@ -66,8 +79,8 @@ body {
     margin-bottom: 10PX;
 }
 
-/* botão de perfil na gaveta de conversa */
-#bt_chat {
+/* botão de feed na gaveta de conversa */
+#bt_feed {
     margin-top: 10px;
     margin-right: 10px;
     right: 5%;
@@ -76,12 +89,12 @@ body {
     height: 40px;
     margin-bottom: 10PX;
 }
- 
+
 /* container q segura as conversas */
-.cnt_conversas{
+.cnt_conversas {
     position: absolute;
     top: 15%;
-    left:5%;
+    left: 5%;
     width: 22%;
     height: 80%;
     background-color: rgb(255, 255, 255);
@@ -89,17 +102,18 @@ body {
 }
 
 /* segura o nome guja chat em cima da lista de contatos */
-.logo{
+.logo {
+    min-width: fit-content !important;
     background-color: rgb(0, 0, 255);
     height: 10%;
     width: 100%;
-    border-radius:10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     justify-content: center;
     display: flex;
     color: var(--recado);
 }
 
-    /* container interno que segura as conversas */
+/* container interno que segura as conversas */
 .lista {
     width: 100%;
     background: rgb(253, 253, 253);
@@ -110,7 +124,7 @@ body {
     padding: 10px;
 }
 
-    /* container interno que segura as conversas */
+/* container interno que segura as conversas */
 .opções {
     width: 100%;
     background: white;
@@ -130,29 +144,33 @@ body {
 }
 
 /* tela do chat onde as pessoas vão conversar */
-.chat{
+.chat {
     width: 65%;
     height: 80%;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 15%;
     right: 5%;
     border-radius: 10px;
+    min-width: 350px !important;
+
+    
 }
 
 /* essa div segura os elementos em cima do chat */
-.logo2{
+.logo2 {
+    min-height: 80px;
     background-color: rgb(0, 0, 255);
     height: 10%;
     width: 100%;
-    border-radius:10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     display: flex;
     color: var(--recado);
     align-items: center;
 }
 
 /* botão perfil do chat */
-#bt_perfil_chat{
+#bt_perfil_chat {
     left: 5%;
     border-radius: 50%;
     width: 40px;
@@ -165,28 +183,28 @@ body {
 
 /* input que o usuario digita */
 #ipt_mensagem {
-    margin-top: 50%;
+    bottom: 20px;
     width: 75%;
     position: absolute;
     left: 15%;
 }
 
 #bt_enviar {
-    margin-top: 50%;
+    bottom: 20px;
     position: absolute;
     right: 3%;
     border-radius: 50px;
 }
 
 #bt_midia {
-    margin-top: 50%;
+    bottom: 20px;
     position: absolute;
     left: 9%;
     border-radius: 50px;
 }
 
 #bt_fotos {
-    margin-top: 50%;
+    bottom: 20px;
     position: absolute;
     left: 3%;
     border-radius: 50px;
