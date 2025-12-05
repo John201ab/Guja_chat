@@ -3,180 +3,193 @@
     --recado: white;
 }
 
-html,
 body {
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* todo o fundo do site */
 .container-fluid {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: rgb(255, 1, 1);
     display: flex;
+    min-width: 35vmin !important;
+}
+
+/* foto de funco do site */
+#imgFundo {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+/* fundo da barra de pesquisa */
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmin;
+
+    width: 91%;
+    height: 8vmin;
+
+    background: white;
+    border-radius: 2vmin;
+    padding: 1.5vmin 3vmin;
+
+
+    position: relative;
+    margin: 4vmin auto 0 auto;
 }
 
 /* barra de pesquisa */
 #ipt_pesquisa {
-    margin-top: 30px;
-    width: 75%;
-    position: absolute;
-    left: 15%;
+    margin-top: 1.5vmin;
+    flex: 3;
 }
 
 /* botão de publicação */
 #bt_publicação {
-    margin-top: 30px;
-    position: absolute;
-    left: 5%;
+    margin-top: 1.5vmin;
+    flex: 0.3;
 }
 
 /* botão de perfil */
 #bt_perfil {
-    margin-top: 30px;
-    position: absolute;
-    right: 5%;
+    margin-top: 1.5vmin;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 6vmin;
+    height: 6vmin;
 }
 
 /* botão de perfil na gaveta de conversa */
-#bt_chat {
-    margin-top: 10px;
-    margin-right: 10px;
-    right: 5%;
+#bt_chat,
+#bt_feed {
+    margin-top: 1.5vmin;
+    margin-right: 1.5vmin;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10PX;
+    width: 6vmin;
+    height: 6vmin;
+    margin-bottom: 1.5vmin;
 }
 
-/* botão de perfil na gaveta de conversa */
-#bt_chat {
-    margin-top: 10px;
-    margin-right: 10px;
-    right: 5%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10PX;
-}
- 
 /* container q segura as conversas */
-.cnt_conversas{
+.cnt_conversas {
     position: absolute;
     top: 15%;
-    left:5%;
+    left: 5%;
     width: 22%;
-    height: 80%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    height: 72%;
+    background-color: white;
+    border-radius: 2vmin;
 }
 
 /* segura o nome guja chat em cima da lista de contatos */
-.logo{
-    background-color: rgb(0, 0, 255);
-    height: 10%;
+.logo {
+    background-color: blue;
+    height: 60px;
     width: 100%;
-    border-radius:10px 10px 0px 0px;
+    border-radius: 2vmin 2vmin 0 0;
     justify-content: center;
     display: flex;
     color: var(--recado);
 }
 
-    /* container interno que segura as conversas */
+/* container interno que segura as conversas */
 .lista {
     width: 100%;
     background: rgb(253, 253, 253);
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 0.3vmin solid #ccc;
     align-items: center;
     display: flex;
-    padding: 10px;
+    padding: 2vmin;
 }
 
-    /* container interno que segura as conversas */
+/* opções */
 .opções {
     width: 100%;
     background: white;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 0.3vmin solid #ccc;
     position: absolute;
-    top: 87%;
-    border-radius: 0% 0% 10px 10px;
-
+    top: 74%;
+    border-radius: 0 0 2vmin 2vmin;
 }
 
 /* cada conversa individual */
 .item {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+    padding: 2vmin;
+    border-bottom: 0.3vmin solid #ddd;
     cursor: pointer;
 }
 
-/* tela do chat onde as pessoas vão conversar */
-.chat{
+/* tela do chat */
+.chat {
     width: 65%;
     height: 80%;
-    background-color: aliceblue;
+    background-color: white;
     position: absolute;
     top: 15%;
     right: 5%;
-    border-radius: 10px;
+    border-radius: 2vmin;
+    min-width: 35vmin !important;
 }
 
 /* essa div segura os elementos em cima do chat */
-.logo2{
-    background-color: rgb(0, 0, 255);
-    height: 10%;
+.logo2 {
+    min-height: 10vmin;
+    background-color: blue;
     width: 100%;
-    border-radius:10px 10px 0px 0px;
+    border-radius: 2vmin 2vmin 0 0;
     display: flex;
     color: var(--recado);
     align-items: center;
 }
 
 /* botão perfil do chat */
-#bt_perfil_chat{
-    left: 5%;
+#bt_perfil_chat {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 6vmin;
+    height: 6vmin;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 /* input que o usuario digita */
 #ipt_mensagem {
-    margin-top: 50%;
+    bottom: 3vmin;
     width: 75%;
     position: absolute;
     left: 15%;
 }
 
 #bt_enviar {
-    margin-top: 50%;
+    bottom: 3vmin;
     position: absolute;
     right: 3%;
-    border-radius: 50px;
+    border-radius: 3vmin;
 }
 
 #bt_midia {
-    margin-top: 50%;
+    bottom: 3vmin;
     position: absolute;
     left: 9%;
-    border-radius: 50px;
+    border-radius: 3vmin;
 }
 
 #bt_fotos {
-    margin-top: 50%;
+    bottom: 3vmin;
     position: absolute;
     left: 3%;
-    border-radius: 50px;
+    border-radius: 3vmin;
 }
