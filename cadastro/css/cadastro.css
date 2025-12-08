@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/fundo_guja.jpg);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container img{
+    width: 300px;
+    padding: 45px;
+    margin-top: -500px;
+    margin-right: 20px;
+}
+
+.new-account{
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    height: 550px;
+    max-width: 400px;
+    text-align: center;
+    margin-right: 300px;
+}
+
+/* 
+.teste{
+    margin-right: 500px;
+    color: white;
+    font-size: 20rem;
+} */
+
+.header-title {
+    color: #555;
+    margin-top: -10px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.input-condition{
+    color: #999;
+    margin-right: 45px;
+}
+
+.btn-continue{
+    width: 100%;
+    padding: 12px;
+    background-color: #0A0546;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn-continue a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-continue:hover{
+    background-color: #0056b9;
+}

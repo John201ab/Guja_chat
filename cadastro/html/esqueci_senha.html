@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/esqueci_senha.css">
+    <script src="/js/esqueci_senha.js" defer></script>
+    <title>Redefir senha</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="/img/guja_chat.png" alt="Logo Guja Chat">
+    </div>
+
+    <main class="new-password">
+        <form>
+            <div class="input-group">
+                <h3>Esqueci minha senha</h3>
+                <p>Preencha os dados abaixo para redefinir sua senha</p>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="E-mail" id="email">
+            </div>
+
+            <div class="input-group"> 
+                <i class="fas fas fa-lock"></i>
+                <input type="password" placeholder="Nova senha" id="new-password">
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirme sua senha" id="confirmarSenha">
+            </div>
+
+            <button onclick="continuar(); return false" type="submit" class="btn-continue">Continuar</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -48,8 +48,9 @@
 /* ajuste tela minimizada */
 @media (max-width: 900px) and (max-height: 400px) {
     .cnt_conversas {
-        display: none;  
+        display: none;
     }
+
 
     .forma {
         display: none;
