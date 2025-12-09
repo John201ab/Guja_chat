@@ -4,10 +4,9 @@ body{
     align-items: center;
     background-size: cover;
     background-image: url(../img/fundo_guja.jpg);
-    overflow-x: hidden;
     background-repeat: space;
     min-height: 100vh;
-    padding: 20px;
+
 }
 
 /* CONTAINER CENTRALIZADO */
