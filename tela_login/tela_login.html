@@ -9,7 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./tela_login.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="./tela_login.js" defer></script>
+    <script src="../cadastro/cadastro.js" defer></script>
     <title>Bem-Vindo ao Guja Chat</title>
 </head>
 
@@ -44,12 +44,12 @@
                     <input type="checkbox" id="remember">
                     Lembrar senha.
                 </label>
-                <a href="password.html" class="forgot-password">Esqueci a senha</a>
+                <a href="../esqueci_senha/esqueci_senha.html" class="forgot-password">Esqueci a senha</a>
             </div>
 
-            <button onclick="logar(); return false" type="submit" class="btn-login" id="btn-entrar">Entrar</button>
+            <button onclick="cadastro(); return false" type="submit" class="btn-login" id="btn-entrar">Entrar</button>
 
-            <p class="no-occount">Não tem uma conta?</p> <a href="cadastro.html" class="register-link">Cadastra-se?</a>
+            <p class="no-occount">Não tem uma conta?</p> <a href="../cadastro/cadastro.html" class="register-link">Cadastra-se?</a>
 
 
         </form>

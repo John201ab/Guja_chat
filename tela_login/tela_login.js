@@ -15,7 +15,7 @@ function logar(){
 
     if (email == 'teste@gmail.com' && senha == '12345'){
         alert("Sucesso!")
-        location.href = "../"
+        location.href = "../feed_inicial/feed.html"
     }
     else{
         alert("E-mail ou senha incorretos!");

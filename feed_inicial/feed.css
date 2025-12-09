@@ -15,7 +15,7 @@ body {
 .container-fluid {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 1, 1);
+    background-color: rgb(255, 255, 255);
     display: flex;
     min-width: 35vmin !important;
 }
@@ -52,6 +52,26 @@ body {
 #ipt_pesquisa {
     margin-top: 1.5vmin;
     flex: 3;
+}
+
+/* por enquanto exibe só a mensagem de erro */
+.post {
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* mensagem de erro */
+#nuvem {
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 0;}
 }
 
 /* botão de publicação */
@@ -132,6 +152,9 @@ body {
 
 /* tela do chat */
 .chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 65%;
     height: 80%;
     background-color: white;

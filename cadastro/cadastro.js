@@ -26,7 +26,7 @@ function cadastro() {
     console.log("Nome:", nomeCompleto);
     console.log("E-mail:", email);
     
-    location.href = "index.html";
+    location.href = "../../tela_login/tela_login.html";
 }
 
 

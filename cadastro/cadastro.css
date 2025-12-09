@@ -2,89 +2,112 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-image: url(/img/fundo_guja.jpg);
-    overflow: hidden;
+    background-size: cover;
+    background-image: url(../img/fundo_guja.jpg);
+    background-repeat: space;
+    min-height: 90vh;
+
 }
 
+/* CONTAINER CENTRALIZADO */
 .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
 }
 
+/* mensagem bem vindo */
+.boas_vindas{
+    position: fixed;
+    left: 150px;
+    bottom: 150px;
+    font-size: 3lvw;
+    font-weight: bold;
+    color:white;
+}
+
+/* LOGO GRANDE EM CIMA (ESQUERDA) */
 .container img{
-    width: 300px;
-    padding: 45px;
-    margin-top: -500px;
-    margin-right: 20px;
+    width: 850px;
+    max-width: 80%;
+    margin: 0 auto 40px auto;
+    position: relative;
+    top: -200px;
+    left: -90px;
 }
 
-.new-account{
-    background-color: white;
-    padding: 60px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+/* TEXTO BEM-VINDO EMBAIXO NA ESQUERDA */
+.texto-bemvindo{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
     width: 100%;
-    height: 550px;
-    max-width: 400px;
-    text-align: center;
-    margin-right: 300px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 40px;
+    background-color: rgb(34, 138, 138);
 }
 
-/* 
-.teste{
-    margin-right: 500px;
-    color: white;
-    font-size: 20rem;
-} */
-
-.header-title {
-    color: #555;
-    margin-top: -10px;
+/* LOGIN CENTRALIZADO */
+.login-box {
+     background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(37, 37, 37, 0.1);
+    width: 100%;
+    height: 500px;
+    max-width: 300px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.input-group{
+/* INPUTS */
+.input-group {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 5px 0;
-    margin-top: 20px;
+}
+
+.input-group i{
+    color: #555;
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
 .input-group input{
     border: none;
     outline: none;
     flex-grow: 1;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #333;
 }
 
-.input-condition{
-    color: #999;
-    margin-right: 45px;
+.options-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9em;
 }
 
-.btn-continue{
+.btn-login{
     width: 100%;
     padding: 12px;
     background-color: #0A0546;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-bottom: 20px;
-    margin-top: 20px;
 }
 
-.btn-continue a {
-    text-decoration: none;
-    color: white;
-}
-
-.btn-continue:hover{
-    background-color: #0056b9;
+.btn-login:hover{
+    background-color: #0056b3;
 }
