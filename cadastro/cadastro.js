@@ -1,11 +1,10 @@
 
-function cadastro() {
-    const nomeCompleto = document.getElementById("name").value;
+function cadastro() {  
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmaPassword = document.getElementById("confirmarPassword").value;
 
-    if (nomeCompleto === '' || email === '' || password === '') {
+    if (email === '' || password === '' || confirmaPassword === '') {
         alert("Preencha os dados obrigatórios: Nome, E-mail e Senha.");
         return;
     }
@@ -23,11 +22,11 @@ function cadastro() {
     alert("Dados enviados com sucesso, cadastro realizado.")
     
     console.log("--- Dados do Cadastro ---");
-    console.log("Nome:", nomeCompleto);
-    console.log("E-mail:", email);
-    
-    location.href = "../../tela_login/tela_login.html";
-}
+    console.log("email:", email);
+    console.log("senha:", password);
+    console.log("funciona plmds");
+    location.href = "../tela_login/tela_login.html";
+ }
 
 
 
