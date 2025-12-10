@@ -29,6 +29,26 @@ body {
     left: 0;
 }
 
+/* por enquanto exibe só a mensagem de erro */
+.post {
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* mensagem de erro */
+#nuvem {
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 0;}
+}
+
 /* fundo da barra de pesquisa */
 .forma {
     display: flex;

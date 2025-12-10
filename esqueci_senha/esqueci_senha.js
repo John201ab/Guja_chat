@@ -1,25 +1,20 @@
-function cadastro(){
-    const usuario = document.getElementById("user").value;
-    const email = document.getElementById("email").value;
-    const newPassword = document.getElementById("new-password").value;
-    const confirmarSenha = document.getElementById("confirmarSenha").value;
+function cadastro() {
 
-    if (email === '' || newpassword === '' || Password === ''){
+    const email = document.getElementById("email").value;
+    const newPassword = document.getElementById("newpassword").value;
+    const confirmarSenha = document.getElementById("password").value;
+
+    if (email === '' || newPassword === '' || confirmarSenha === '') {
         alert("Preencha os dados para seguir com nova senha.");
         return;
     }
 
-    if (newpassword === ''){
-        alert("Confirme a senha.");
-        return;
-    }
-
-    if(newpassword !== Password){
+    if (newPassword !== confirmarSenha) {
         alert("As senhas estão divergentes, verifique.");
         return;
     }
 
     alert("Nova senha cadastrada.");
 
-    location.href = "../tela_login/tela_login";
+    location.href = "../tela_login/tela_login.html";
 }

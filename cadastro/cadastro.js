@@ -24,7 +24,6 @@ function cadastro() {
     console.log("--- Dados do Cadastro ---");
     console.log("email:", email);
     console.log("senha:", password);
-    console.log("funciona plmds");
     location.href = "../tela_login/tela_login.html";
  }
 

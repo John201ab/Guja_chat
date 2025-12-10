@@ -6,6 +6,7 @@ body{
     background-image: url(../img/fundo_guja.jpg);
     background-repeat: space;
     min-height: 100vh;
+    font-family: "Arial", sans-serif;
 
 }
 

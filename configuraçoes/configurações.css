@@ -29,6 +29,27 @@ body {
     left: 0;
 }
 
+/* por enquanto exibe só a mensagem de erro */
+.post {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/* mensagem de erro */
+#nuvem {
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 0;}
+}
+
 /* fundo da barra de pesquisa */
 .forma {
     display: flex;
@@ -132,9 +153,12 @@ body {
 
 /* tela do chat */
 .chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 65%;
     height: 80%;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     position: absolute;
     top: 15%;
     right: 5%;
