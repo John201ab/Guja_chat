@@ -1,0 +1,11 @@
+Localize o arquivo tela_login.html (ele está na raiz do projeto).
+
+Dê duplo clique no arquivo para abrir no navegador.
+
+O site será iniciado diretamente na tela de login.
+
+
+alexzera, obrigado por dedicar seu tempo para avaliar este trabalho e me ajudar com ele.(apesar da quantidade absurda de
+ bugs de responsividade q deve ter aqui)
+Agradeço também pela paciência, orientação e por sempre me incentivar a melhorar. Sua forma de ensinar realmente faz diferença.
+Obrigado.
